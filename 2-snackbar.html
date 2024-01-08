@@ -12,7 +12,11 @@
     
         
 
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-dc026446.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-651d7991.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-80d0dc0f.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-ff699e6f.css">
   </head>
   <body>
     <section>
@@ -27,7 +31,7 @@
       </label>
     
       <fieldset class="field">
-        <legend class="text">State</legend>
+        <legend>State</legend>
         <label class="text">
           <input type="radio" name="state" value="fulfilled" required />
           Fulfilled
@@ -40,6 +44,8 @@
     
       <button type="submit">Create notification</button>
     </form>
+
+    
 
   </body>
 </html>
