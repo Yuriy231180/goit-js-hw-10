@@ -17,7 +17,7 @@ fieldset {
   margin: 0;
 }
 label {
-  width: 100%;
+  width: 360px;
 }
 
 .form {
@@ -26,20 +26,43 @@ label {
 
 .input {
   height: 40px;
-  width: 100%;
+  width: 356px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin: 8px 0 16px 0;
+  
 }
 
 .text {
   color: #2e2f42;
-
+  
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  margin-left: 48px;
+ 
 }
 
 .field {
+ 
   height: 64px;
   flex-shrink: 0;
+  
+}
+
+button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4E75FF;
+  color: #FFFFFF;
+  width: 360px;
+  margin-top: 24px;
 }

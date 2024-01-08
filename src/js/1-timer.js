@@ -28,7 +28,7 @@ function addLeadingZero(_num) {
 }
 
 function startTimer(_timeobj) {
-  // ms
+  
   let convert_timeobj = convertMs(_timeobj);
   let _timer_elements = document.querySelectorAll('[data-timer]');
   _timer_elements.forEach(timer_element => {
@@ -54,7 +54,8 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     userSelectedDate = selectedDates[0];
-    // Нужно сравнить выбраную дату и текущую. Если прошлое - кидаем алерты
+
+    // сранение дат
     let msDate = userSelectedDate - new Date();
     if (msDate <= 0) {
       // Alert
@@ -71,7 +72,7 @@ const options = {
   },
 };
 
-// Инииализация календаря
+// календарь
 let element = document.getElementById('datetime-picker');
 let userSelectedDate;
 flatpickr(element, options);
